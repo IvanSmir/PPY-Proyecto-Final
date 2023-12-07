@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: rgb(16, 190, 196);
+    color: white;
+    text-align: end;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.intro {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    color: #333;
+}
+
+.intro p {
+    color: #666;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
