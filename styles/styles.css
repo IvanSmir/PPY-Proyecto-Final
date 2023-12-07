@@ -1,12 +1,23 @@
-@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+@import url('https://db.onlinewebfonts.com/c/f1a22f6f15d272c7aa56da8b2c91f5e5?family=Circular+Std+Black');
+@import url('https://db.onlinewebfonts.com/c/d9d77150b3dda1eea88a7a8f979e7711?family=DM+Sans+Regular');
+
+
+
 body {
-    font-family: "Circular Std Bold",'Arial', sans-serif;
+    font-family: "Circular Std Black";
+    margin: 0;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color:#60e1cb
 }
 
 header {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: #fff;
     text-align: end;
+    margin-top: 40px;
+    margin-right: 250px;
 }
 
 nav ul {
@@ -19,46 +30,87 @@ nav ul li {
 }
 
 .intro {
-    padding: 20px;
+    padding: 0;
+    margin-left: 250px;
+    margin-top: 331.42px;
+    margin-bottom: 270px;
     text-align: left;
-    max-width: 700px;
-    overflow: auto; 
+    overflow: visible;
 }
 
 .intro h1 {
     color: #333;
-    font-size: 30px;
+    font-size: 58px;
+    max-width: 770px;
+    max-height: 130px;
+    font-weight: bold;
 }
 
 .intro p {
     color: #666;
-    text-justify: auto;
+    text-align: justify;
+    font-family: "DM Sans Regular", sans-serif;
+    max-width: 672.4px;
+    max-height: 138px;
+    font-size: 20px;
 }
-#Mundial{
-    color: rgb(0, 186, 158);
-    font-size: 30px;
+
+#Mundial {
+    color: #60e1cb;
 }
+
 button {
-    background-color: rgb(0, 186, 158);
+    background-color: #60e1cb;
+    font-family: "Circular Std Black";
     color: white;
-    font-weight: bold;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 14px;
+    margin: 2px 2px;
     border-radius: 40px;
-    box-shadow: 0px 20px 20px rgba(13, 157, 157, 0.2); /* Valor de transparencia ajustado */
+    box-shadow: 0 20px 20px rgba(96, 225, 203, 0.5);
     cursor: pointer;
+    border: none;
 }
-#b2{
+
+#b2 {
     background-color: white;
-    color: rgb(0, 186, 158);
+    color: #60e1cb;
+    border: 2px solid rgba(7, 0, 59, 0.17);
+    box-shadow: none;
 }
+
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #222;
+    padding: 10px;
+    background-color: #60e1cb;
     color: white;
+    margin-top: 20px;
+}
+
+.linea-circular {
+    width: 701.57px;
+    height: 701.57px;
+    border: 5px solid rgba(96, 225, 203, 0.2); /* Color con transparencia del 20% */
+    border-radius: 50%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 50% 50%, 50% 100%, 0% 100%);
+    position: absolute;
+    bottom: -430px;
+    left: -140px;
+    z-index: -1; /* Ajusta este valor para que la línea esté detrás o delante del texto */
+
+}
+
+.circulo-pequeno {
+    width: 601.57px;
+    height: 601.57px;
+    border: 5px solid rgba(96, 225, 203, 0.2); /* Color con transparencia del 20% */
+    border-radius: 50%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 50% 50%, 50% 100%, 0% 100%);
+    position: absolute;
+    bottom: -430px;
+    left: -140px;
+    z-index: -1; /* Ajusta este valor para que la línea esté detrás o delante del texto */
 }
