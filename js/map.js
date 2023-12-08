@@ -17,7 +17,11 @@ document.getElementById('mapsvg').addEventListener('click', function(event) {
         originalTransform = svg.style.transform; 
         svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
         isZoomed = true;
-    } 
+    } else{
+        if (event.target.tagName === 'path') { 
+            console.log('Círculo clickeado:', event.target.id);
+        }
+    }
 });
 
 document.getElementById("mapsvg").addEventListener('dblclick', function(event){
