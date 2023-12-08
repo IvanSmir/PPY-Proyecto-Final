@@ -15,7 +15,7 @@ body {
 
 main {
     flex: 1;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 a:link,
@@ -114,7 +114,6 @@ footer {
     padding: 10px;
     background-color: #60e1cb;
     color: white;
-    margin-top: 20px;
 }
 
 
@@ -135,7 +134,9 @@ footer {
     justify-content: center;
 }
 .map{
-    margin-top: 10px;
+    
+    margin-top: 20px;
+    overflow: hidden;
 }
 
 
@@ -204,4 +205,17 @@ footer {
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+
+#mapsvg {
+    transition: transform 0.3s ease;
+    transform-origin:  top left;
+
+}
+
+.maped {
+    overflow: hidden;
+    width: 100%;
+    height: 87vh
 }
