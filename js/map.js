@@ -116,7 +116,7 @@ function fetchWeatherForCapital(capital) {
         updateElementText('countryTemperature', 'Capital desconocida');
         return;
     }
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=9e11fddeffb1b0c8dedb61e475477272&appid=${apiKey}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=9e11fddeffb1b0c8dedb61e475477272&units=metric`;
 
     fetch(url)
         .then(response => {
