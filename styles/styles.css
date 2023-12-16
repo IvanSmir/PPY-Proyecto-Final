@@ -1,8 +1,6 @@
 @import url('https://db.onlinewebfonts.com/c/f1a22f6f15d272c7aa56da8b2c91f5e5?family=Circular+Std+Black');
 @import url('https://db.onlinewebfonts.com/c/d9d77150b3dda1eea88a7a8f979e7711?family=DM+Sans+Regular');
 
-
-
 body {
     font-family: "Circular Std Black";
     margin: 0;
@@ -34,9 +32,8 @@ header {
     padding: 2px;
     font-size: 20px;
     box-shadow: 0 2px 2px rgba(22, 22, 22, 0.2);
-    z-index:2
+    z-index: 2
 }
-
 
 nav ul li {
     display: inline;
@@ -51,7 +48,6 @@ nav ul li {
     overflow: hidden;
 }
 
-
 .content,
 .intro div:nth-child(2) {
     flex: 1;
@@ -59,7 +55,6 @@ nav ul li {
     margin-bottom: 30px;
 
 }
-
 
 .content {
     max-width: 42em;
@@ -116,7 +111,7 @@ footer {
     padding: 10px;
     background-color: #60e1cb;
     color: rgb(0, 0, 0);
-    opacity: 0.9; 
+    opacity: 0.9;
 }
 
 .footer-content {
@@ -176,7 +171,6 @@ footer a:active {
     overflow: hidden;
 }
 
-
 @media only screen and (max-width: 768px) {
     body {
         flex-direction: column;
@@ -207,6 +201,7 @@ footer a:active {
     .content p {
         font-size: 20px;
     }
+
     .image {
         width: 100%;
     }
@@ -218,10 +213,11 @@ footer a:active {
         margin-bottom: 30px;
 
     }
+
     .maped {
-       display: flex;
-       align-items: center;
-       justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #mapsvg {
@@ -229,7 +225,6 @@ footer a:active {
         height: auto;
     }
 }
-
 
 @keyframes fadeOut {
     from {
@@ -263,7 +258,6 @@ footer a:active {
     animation-fill-mode: forwards;
 }
 
-
 #mapsvg {
     transition: transform 0.3s ease;
     transform-origin: top left;
@@ -290,12 +284,12 @@ footer a:active {
     align-items: center;
 }
 
-#infoModal h2, #infoModal p {
+#infoModal h2,
+#infoModal p {
     color: #333;
     margin-top: 10px;
 }
 
-path:hover{
+path:hover {
     fill: #117c6a;
 }
-
