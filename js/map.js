@@ -26,17 +26,22 @@ function handleMapDoubleClick() {
 }
 
 function zoomIn(event) {
-    const svgRect = mapSvg.getBoundingClientRect();
-    const x = event.clientX - svgRect.left;
-    const y = event.clientY - svgRect.top;
+    const clickedPath = event.target;
+    if (clickedPath.tagName === 'path') {
+        const svgRect = mapSvg.getBoundingClientRect();
+        const pathRect = clickedPath.getBoundingClientRect();
+        
+        const x = pathRect.left - svgRect.left + pathRect.width / 2;
+        const y = pathRect.top - svgRect.top + pathRect.height / 2;
 
-    const scale = 3;
-    const translateX = -x * (scale - 1);
-    const translateY = -y * (scale - 1);
+        const scale = 3;
+        const translateX = window.innerWidth / 2 - x * scale;
+        const translateY = window.innerHeight / 2 - y * scale;
 
-    originalTransform = mapSvg.style.transform;
-    mapSvg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-    isZoomed = true;
+        originalTransform = mapSvg.style.transform;
+        mapSvg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        isZoomed = true;
+    }
 }
 
 function zoomOut() {

@@ -62,20 +62,20 @@ nav ul li {
 
 
 .content {
-    max-width: 40em;
+    max-width: 42em;
     margin-left: 10em;
 }
 
 .content h1 {
     color: #333;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .content p {
     color: #666;
     font-family: "DM Sans Regular", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #Mundial {
@@ -108,15 +108,49 @@ nav ul li {
     transform: translateY(10px);
 }
 
-
-
 footer {
+    position: absolute;
+    bottom: -215px;
+    width: 100%;
     text-align: center;
     padding: 10px;
     background-color: #60e1cb;
-    color: white;
+    color: rgb(0, 0, 0);
+    opacity: 0.9; 
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 200px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+footer a:link,
+footer a:visited,
+footer a:active {
+    color: rgb(0, 0, 0);
+}
 
 #imagesimple {
     max-width: 80%;
@@ -246,20 +280,19 @@ footer {
     display: none;
     position: absolute;
     z-index: 10;
-    border: 1px solid #fff;
-    background-color: #60e1cb;
+    border: 1px solid #666;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
-    color: #fff;
     text-align: left;
     align-items: center;
 }
 
 #infoModal h2, #infoModal p {
-    color: #ffffff;
-    margin-top: 0;
+    color: #333;
+    margin-top: 10px;
 }
 
 path:hover{
